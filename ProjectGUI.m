@@ -110,7 +110,7 @@ if a3 >= 0
     axis off;
 else
     disp("It is benign");
-    set(handles.answer,'String','It is possible to be a benign tumor, but should go with a specialist');
+    set(handles.answer,'String','It is possible to be a benign tumor, but you should go with a specialist');
     background1 = imread('check.jpg');
     axes(handles.answerImg);
     imshow(background1);
