@@ -12,7 +12,7 @@ df.rename(columns={'radius_mean':'radius', 'texture_mean':'texture', 'perimeter_
 
 df["diagnosis"].replace({'B':-1, 'M':1}, inplace=True)
 df["diagnosis"] = df["diagnosis"].astype(int)
-df = df.loc[:,['radius','texture','perimeter','area','smoothness','compactness','concavity','concave points','simmetry','fractal_dimension']]
+df = df.loc[:,['diagnosis','radius','texture','perimeter','area','smoothness','compactness','concavity','concave points','simmetry','fractal_dimension']]
 print(df.head())
 
 #Se ajustaron los datos para hacerlos entre un rango aproximado de 0 a 1
